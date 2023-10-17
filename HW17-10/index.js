@@ -14,5 +14,6 @@ while(true){
     for(let key in obj) {
         if(key.toLowerCase()===field)isIncluded=true;
     }
+    
     console.log(isIncluded);
 }
