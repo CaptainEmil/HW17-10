@@ -3,6 +3,16 @@
 console.clear();
 
 
-const titles = ['Заголовок 1', 'Очень длинный заголовок во всей книжке', 'Заголовок 2'];
-const pages = [10, 20, 123456789012345];
-titles.map((x,i)=>console.log(`${x.concat('.').padEnd(20-String(pages[i]).split('').length,'.')}${pages[i]}`));
+while(true){
+    let input=prompt('Enter the String');
+    let reverseArr=input.split('').reverse();
+    for(let i=0; i<reverseArr.length;i++){
+        let element=reverseArr[i];
+        if(element===element.toLowerCase()){
+            reverseArr[i]=reverseArr[i].toUpperCase();
+        }
+        else reverseArr[i]=reverseArr[i].toLowerCase();
+    }
+    let reverseStr=reverseArr.join('');
+    console.log(reverseStr);
+}
